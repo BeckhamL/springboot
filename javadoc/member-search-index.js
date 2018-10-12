@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"io.javabrains.springbootstarter","c":"ApiApp","l":"ApiApp()","url":"%3Cinit%3E()"},{"p":"io.javabrains.springbootstarter","c":"ApiApp","l":"main(String[])","url":"main(java.lang.String[])"}]
