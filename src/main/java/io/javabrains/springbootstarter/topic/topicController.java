@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-public class topicController {
+public class topicController extends Topic{
 
     // Gets converted to JSON automatically
-    @RequestMapping("/topic")
+    @RequestMapping("/topics")
     public List<Topic> getAllTopics() {
         return Arrays.asList(
                 new Topic("beckham", "5134", "sure"),
