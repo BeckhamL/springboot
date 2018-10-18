@@ -6,10 +6,10 @@ import java.util.*;
 @Service
 public class TopicService {
 
-    List<Topic> topics = Arrays.asList(
+    List<Topic> topics = new ArrayList<>(Arrays.asList(
             new Topic("beckham", "5134", "sure"),
             new Topic("ok", "sda", "sada")
-    );
+    ));
 
     public List<Topic> getAllTopics() {
         return topics;
@@ -17,5 +17,9 @@ public class TopicService {
 
     public Topic getTopic(String id){
         return topics.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+    }
+
+    public void addTopic(Topic topic) {
+        topics.add(topic);
     }
 }
